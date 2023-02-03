@@ -1,0 +1,321 @@
+.contact {
+	width: 100%;
+	color: #fff;
+	padding: 50px 0;
+	font-size: 2rem;
+}
+
+.contact__title {
+	width: fit-content;
+	position: relative;
+}
+
+.like__wrapper {
+	margin-top: 20px;
+	padding: 40px 100px 20px 100px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.like__title {
+	width: fit-content;
+	position: relative;
+}
+
+.like__title::after {
+	content: attr(data-title);
+	font-size: 1.2rem;
+	position: absolute;
+	top: 77%;
+	left: 80%;
+}
+
+.like__btn {
+	cursor: pointer;
+	margin-left: 30px;
+	font-size: 2.5rem;
+}
+
+.like__count {
+	font-size: 3rem;
+}
+
+.visited__count {
+	font-size: 3rem;
+	margin-left: 30px;
+}
+
+.contact__container {
+	margin-top: 20px !important;
+}
+
+.copy__icon {
+	font-size: 2rem;
+	width: 40px;
+	filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(100deg) brightness(100%) contrast(100%);
+	opacity: 0;
+	margin-right: -15px;
+	transition: .2s;
+	text-decoration: none !important;
+}
+
+.copy__icon:hover {
+	transform: translateY(-10px)
+}
+
+.contact__title::after {
+	content: 'ready to listen your suggestions';
+	font-size: 1.2rem;
+	position: absolute;
+	top: 77%;
+	left: 37%;
+}
+
+.links__wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 40px 70px;
+	font-size: 3rem;
+}
+
+.contact__header {
+	display: flex;
+	align-items: center;
+	color: #fff;
+	margin: 20px !important;
+}
+
+.location__icon {
+	filter: invert(100%) drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.3));
+	width: 60px;
+	margin: 0 10px 0 0;
+}
+
+.links__wrapper a:not(.mail__mail) {
+	text-decoration: none;
+	color: #fff;
+	transition: .5s;
+	margin: 20px 30px;
+}
+
+.mail a {
+	text-decoration: none;
+	margin: 20px 15px 20px 30px;
+}
+
+.mail {
+	display: flex;
+	justify-content: center;
+	transition: .5s;
+}
+
+.mail:hover {
+	transform: translateY(-10px);
+	text-decoration: underline;
+}
+
+.mail:hover .copy__icon {
+	opacity: 1;
+	cursor: pointer;
+}
+
+.links__wrapper a:not(.mail__mail):hover {
+	text-decoration: underline;
+	transform: translateY(-10px);
+}
+
+@media (max-width: 1100px) {
+	.contact {
+		padding: 60px 0;
+		font-size: 2rem;
+	}
+	
+	.like__wrapper {
+		padding: 40px 70px 20px 70px;
+	}
+	
+	.like__count {
+		font-size: 3rem;
+	}
+	
+	.visited__count {
+		font-size: 3rem;
+	}
+	
+	.links__wrapper {
+		padding: 50px 20px;
+		font-size: 3rem;
+	}
+
+	.copy__icon {
+		margin-right: -20px;
+	}
+}
+
+@media (max-width: 991px) {
+	.contact {
+		padding: 40px 0;
+		font-size: 2rem;
+	}
+
+	.like__btn {
+		margin: 7px 0 0 25px;
+		font-size: 1.7rem;
+	}
+	
+	.like__wrapper {
+		padding: 40px 30px 20px 30px;
+	}
+	
+	.like__count {
+		font-size: 2rem;
+	}
+	
+	.visited__count {
+		font-size: 2rem;
+	}
+	
+	.links__wrapper {
+		padding: 50px 0px;
+		font-size: 2rem;
+	}
+
+	.copy__icon {
+		opacity: 1;
+		font-size: 1.6rem !important;
+		margin-right: -20px;
+	}
+}
+
+@media (max-width: 570px) {
+
+	.contact {
+		font-size: 1.7rem;
+	}
+	
+	.like__title {
+		font-size: 1.7rem;
+	}
+
+	.like__btn {
+		margin: 7px 0 0 25px;
+		font-size: 1.4rem;
+	}
+	
+	.like__title::after {
+		content: attr(data-title);
+		font-size: 1rem;
+		position: absolute;
+		top: 77%;
+		left: 80%;
+	}
+
+	.like__wrapper {
+		padding: 40px 20px 20px 20px;
+	}
+	
+	.like__count {
+		font-size: 1.3rem;
+	}
+	
+	.visited__count {
+		font-size: 1.3rem;
+	}
+	
+	.links__wrapper {
+		padding: 50px 0px;
+		font-size: 1.5rem;
+	}
+
+	.links__wrapper a:not(.mail__mail) {
+		margin: 20px 10px;
+	}
+	
+	.mail a {
+		margin: 20px 10px 20px 10px;
+	}
+
+	.copy__icon {
+		opacity: 1;
+		font-size: 1rem !important;
+		margin-right: -20px;
+	}
+}
+
+@media (max-width: 410px) {
+	
+	.like__title::after {
+		font-size: 1rem;
+		top: 77%;
+		left: 80%;
+	}
+
+	.like__btn {
+		margin: 7px 0 0 25px;
+		font-size: 1.3rem;
+	}
+
+	.like__wrapper {
+		padding: 40px 20px 20px 20px;
+	}
+	
+	.like__count {
+		font-size: 1.1rem;
+	}
+	
+	.visited__count {
+		font-size: 1.1rem;
+	}
+
+}
+@media (max-width: 370px) {
+
+	.contact {
+		font-size: 1.4rem;
+	}
+
+	.like__btn {
+		margin: 7px 0 0 25px;
+		font-size: 1rem;
+	}
+
+	.contact__title::after {
+		font-size: 1rem;
+		top: 77%;
+		left: 37%;
+	}
+	
+	.like__wrapper {
+		padding: 5px 10px;
+	}
+	
+	.like__count {
+		font-size: 1.2rem;
+	}
+	
+	.visited__count {
+		font-size: 1.2rem;
+	}
+	
+	.links__wrapper {
+		padding: 50px 0px;
+		font-size: 1.2rem;
+	}
+
+	.links__wrapper a:not(.mail__mail) {
+		margin: 20px 10px;
+	}
+	
+	.mail a {
+		margin: 20px 10px 20px 10px;
+	}
+
+	.copy__icon {
+		opacity: 1;
+		font-size: .8rem !important;
+		margin-right: -20px;
+	}
+}
