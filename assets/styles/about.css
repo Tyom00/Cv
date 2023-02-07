@@ -16,7 +16,7 @@
 }
 
 .avatar__wrapper {
-	width: 40%;
+	width: 39%;
 }
 
 .avatar__frame:hover {
@@ -33,8 +33,8 @@
 }
 
 .avatar {
-	width: 106%;
-	height: 98%;
+	width: 97.5%;
+	height: 102%;
 	transform: scale(1.05);
 }
 
